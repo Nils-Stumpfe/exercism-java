@@ -1,0 +1,9 @@
+# Alle Dateien und Ordner ignorieren
+*
+
+# Den src-Ordner erlauben
+!hello-world/src/
+!hello-world/src/**
+
+# .gitignore selbst nicht ignorieren
+!.gitignore
