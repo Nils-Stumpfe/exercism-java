@@ -6,7 +6,10 @@
 !README.md
 
 
-
+!hello-world
+!hello-world/src
+!hello-world/src/main
+!hello-world/src/main/java
 !hello-world/src/main/java/*.java
 
 
