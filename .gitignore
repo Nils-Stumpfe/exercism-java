@@ -1,0 +1,9 @@
+# Alle Dateien und Ordner ignorieren
+*
+
+# Ausnahme für den src-Ordner (direkt aus dem Root)
+!src/
+!src/**
+
+# .gitignore selbst nicht ignorieren
+!.gitignore
