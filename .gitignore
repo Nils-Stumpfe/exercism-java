@@ -4,13 +4,11 @@
 # .gitignore selbst nicht ignorieren
 !.gitignore
 !README.md
+!src/*
 
 
 # Ausnahme für den src-Ordner (direkt aus dem Root)
 !hello-world
-!hello-world/src
-!hello-world/src/*
-hello-world/README.md
 
 
 
