@@ -2,8 +2,8 @@
 *
 
 # Ausnahme für den src-Ordner (direkt aus dem Root)
-!src/
-!src/*
+!hello-world/src/
+!hello-world/src/*
 
 # .gitignore selbst nicht ignorieren
 !.gitignore
