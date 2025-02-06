@@ -5,6 +5,7 @@
 !.gitignore
 !README.md
 !src/*
+!*.java
 
 
 # Ausnahme für den src-Ordner (direkt aus dem Root)
