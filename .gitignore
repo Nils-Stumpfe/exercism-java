@@ -1,8 +1,0 @@
-# Ausnahme für den src-Ordner (direkt aus dem Root)
-!hello-world
-
-# .gitignore selbst nicht ignorieren
-!.gitignore
-
-# Alle Dateien und Ordner ignorieren
-*
