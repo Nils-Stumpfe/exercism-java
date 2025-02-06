@@ -7,8 +7,10 @@
 
 
 !hello-world
-!hello-world/src
-!hello-world/src/** 
+
+
+!**/src
+!**/src/** 
 
 
 
