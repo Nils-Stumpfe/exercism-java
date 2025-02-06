@@ -8,8 +8,8 @@
 
 # Ausnahme für den src-Ordner (direkt aus dem Root)
 !hello-world
-!*.java
-/hello-world/README.md
+!hello-world/src
+!hello-world/src/*
 
 
 
