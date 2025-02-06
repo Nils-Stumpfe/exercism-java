@@ -5,3 +5,5 @@ Git:
         - all parent folders must be "reactivated"
 
 Java:
+
+    - boolean-Statements: OR and AND bind from left to right.
