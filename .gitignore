@@ -8,7 +8,7 @@
 
 !hello-world
 !hello-world/src
-!hello-world/src/*
+!hello-world/src/** 
 
 
 
