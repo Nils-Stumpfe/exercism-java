@@ -7,7 +7,9 @@
 
 
 # Ausnahme für den src-Ordner (direkt aus dem Root)
+!hello-world
 !*.java
-/hello-word/README.md
+/hello-world/README.md
+
 
 
