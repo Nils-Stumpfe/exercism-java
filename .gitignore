@@ -6,5 +6,5 @@
 
 # .gitignore selbst nicht ignorieren
 !.gitignore
-!README.de
+!README.md
 
