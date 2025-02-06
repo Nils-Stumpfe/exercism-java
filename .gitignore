@@ -4,6 +4,7 @@
 # .gitignore Orga Dateien nicht ignorieren
 !.gitignore
 !README.md
+!Track.md
 
 # java Dateien nicht ignorieren
 !**/src
