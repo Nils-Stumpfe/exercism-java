@@ -9,6 +9,5 @@ I want to freshen up my Java Skills as well as using it as a showcase to potenti
 **result:** <br>
 ...
 
-
 **status:** <br>
 Currently working on the exercises.
