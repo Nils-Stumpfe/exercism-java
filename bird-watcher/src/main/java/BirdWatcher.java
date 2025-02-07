@@ -26,10 +26,10 @@ class BirdWatcher {
     }
 
     public int getCountForFirstDays(int numberOfDays) {
-        return Arrays.stream(birdsPerDay, 0, Math.min(birdsPerDay.length, numberOfDays)).sum();
+        return Arrays.stream(birdsPerDay).limit(numberOfDays).sum();
     }
 
     public int getBusyDays() {
-        return Arrays.stream(birdsPerDay).reduce(0, (count, day) -> count += (day > 4) ? 1: 0);
+        return (int) Arrays.stream(birdsPerDay).filter(a -> a >= 5).count();
     }
 }
