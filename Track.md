@@ -6,15 +6,13 @@ Git:
 
 Java:
 
-    - boolean-Statements: AND binds stronger than OR.
+    - boolean-Statements: 
+        - AND binds stronger than OR.
+
+    - Array-Lists:
+        - remove removes the first of the matching Elements.
 
 KI:
     - O3 ist extrem stark. 
 
 
-# Track:
-Hello-world:
-
-lasagna:
-
-Annalyn:
