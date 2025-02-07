@@ -1,16 +1,20 @@
-# Alle Dateien und Ordner ignorieren
+﻿# Alle Dateien und Ordner ignorieren
 *
 
 # .gitignore Orga Dateien nicht ignorieren
 !.gitignore
 !README.md
 !Track.md
+!UpdateGitignore.ps1
 
 # java Dateien nicht ignorieren
 !**/src
 !**/src/** 
 
 # Exercises nicht ignorieren
+
+# BEGIN AUTO-GENERATED
+!annalyns-infiltration
 !hello-world
 !lasagna
-!annalyns-infiltration
+# END AUTO-GENERATED

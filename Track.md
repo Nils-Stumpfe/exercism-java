@@ -8,6 +8,9 @@ Java:
 
     - boolean-Statements: AND binds stronger than OR.
 
+KI:
+    - O3 ist extrem stark. 
+
 
 # Track:
 Hello-world:
