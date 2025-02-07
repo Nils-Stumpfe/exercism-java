@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 class BirdWatcher {
     private final int[] birdsPerDay;
@@ -18,42 +19,17 @@ class BirdWatcher {
         birdsPerDay[birdsPerDay.length-1]++;
     }
 
+    // the following methods are copied from bobahop's solution uon Exercsim 
+    // https://exercism.org/tracks/java/exercises/bird-watcher/solutions/bobahop 
     public boolean hasDayWithoutBirds() {
-        for (int count : birdsPerDay) {
-            if (count == 0) {
-                return true;
-            }
-        }
-        return false;
+        return Arrays.stream(birdsPerDay).anyMatch(day -> day == 0 );
     }
 
     public int getCountForFirstDays(int numberOfDays) {
-        int rCount = 0;
-
-        try {
-            for (int i = 0; i < numberOfDays; i++) {
-                rCount += birdsPerDay[i];
-            }
-        } catch (IndexOutOfBoundsException e) {
-            rCount = 0;
-
-            for (int i = 0; i < birdsPerDay.length; i++) {
-                rCount += birdsPerDay[i];
-            }
-        }
-
-        return rCount;
+        return Arrays.stream(birdsPerDay, 0, Math.min(birdsPerDay.length, numberOfDays)).sum();
     }
 
     public int getBusyDays() {
-        int busyDays = 0;
-
-        for (int count : birdsPerDay) {
-            if (count >= 5) {
-                busyDays++;
-            }        
-        }
-
-        return busyDays;
+        return Arrays.stream(birdsPerDay).reduce(0, (count, day) -> count += (day > 4) ? 1: 0);
     }
 }
