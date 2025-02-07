@@ -12,6 +12,9 @@ Java:
     - Array-Lists:
         - remove removes the first of the matching Elements.
 
+    - Arrays:
+        - can be iterated by an for-each loop. 
+
 KI:
     - O3 ist extrem stark. 
 
