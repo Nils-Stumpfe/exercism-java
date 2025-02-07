@@ -15,6 +15,18 @@ Java:
     - Arrays:
         - can be iterated by an for-each loop. 
 
+    - Switch-Statements:
+        - it is possible to write every possible outcome as a Value to a Variable.
+            -> example:
+                int result =
+                    switch (operation) {
+                        case "+" -> x;
+                        case "*" -> y;
+                        case "/" -> y;
+                        ...
+                    };
+
+
 KI:
     - O3 ist extrem stark. 
 
