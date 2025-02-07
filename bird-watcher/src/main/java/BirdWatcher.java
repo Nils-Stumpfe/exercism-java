@@ -19,11 +19,15 @@ class BirdWatcher {
         birdsPerDay[birdsPerDay.length-1]++;
     }
 
-    // the following methods are copied from bobahop's solution uon Exercsim 
+    // the following method are copied from bobahop's solution on Exercsim 
     // https://exercism.org/tracks/java/exercises/bird-watcher/solutions/bobahop 
     public boolean hasDayWithoutBirds() {
         return Arrays.stream(birdsPerDay).anyMatch(day -> day == 0 );
     }
+
+
+    // the following methods are copied from kapitanov's solution on Exercsim 
+    // https://exercism.org/tracks/java/exercises/bird-watcher/solutions/kapitanov
 
     public int getCountForFirstDays(int numberOfDays) {
         return Arrays.stream(birdsPerDay).limit(numberOfDays).sum();
