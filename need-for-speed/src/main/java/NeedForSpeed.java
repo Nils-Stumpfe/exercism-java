@@ -18,10 +18,10 @@ class NeedForSpeed {
         return speed;
     }
 
-    // lokked at mohic's solution
-    // https://exercism.org/tracks/java/exercises/need-for-speed/solutions/mohic
+    // lokked at bobahop's solution
+    // https://exercism.org/tracks/java/exercises/need-for-speed/solutions/bobahop
     public boolean batteryDrained() {
-        return (battery - batteryDrain) > 0;
+        return battery < batteryDrain;
     }
 
     public int distanceDriven() {
@@ -30,8 +30,8 @@ class NeedForSpeed {
 
     public void drive() {
         if (!batteryDrained()) {
-       metersDriven += speed;
-       battery -= batteryDrain;
+            metersDriven += speed;
+            battery -= batteryDrain;
         }
     }
 
