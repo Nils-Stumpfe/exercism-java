@@ -18,7 +18,7 @@ class NeedForSpeed {
         return speed;
     }
 
-    // lokked at bobahop's solution
+    // looked at bobahop's solution
     // https://exercism.org/tracks/java/exercises/need-for-speed/solutions/bobahop
     public boolean batteryDrained() {
         return battery < batteryDrain;
