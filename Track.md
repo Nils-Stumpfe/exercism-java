@@ -6,6 +6,9 @@ Git:
 
 Java:
 
+    - ternary operator:
+        - dont use variable--, beacause only variable (wihtout reduction) is returned.
+
     - String:
         - .format:
             - escape for % is: %%.
