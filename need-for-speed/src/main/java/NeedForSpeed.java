@@ -18,8 +18,10 @@ class NeedForSpeed {
         return speed;
     }
 
+    // lokked at mohic's solution
+    // https://exercism.org/tracks/java/exercises/need-for-speed/solutions/mohic
     public boolean batteryDrained() {
-        return (battery >= batteryDrain) ? false : true;
+        return (battery - batteryDrain) > 0;
     }
 
     public int distanceDriven() {
