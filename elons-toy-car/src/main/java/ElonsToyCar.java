@@ -1,17 +1,24 @@
 public class ElonsToyCar {
+
+    private int battery = 100;
+
     public static ElonsToyCar buy() {
-        throw new UnsupportedOperationException("Please implement the (static) ElonsToyCar.buy()  method");
+        return new ElonsToyCar();
     }
 
     public String distanceDisplay() {
-        throw new UnsupportedOperationException("Please implement the ElonsToyCar.distanceDisplay()  method");
+        return String.format("Driven %s meters", convertToMeters());
     }
 
     public String batteryDisplay() {
-        throw new UnsupportedOperationException("Please implement the ElonsToyCar.batteryDisplay()  method");
+        return (battery > 0) ? String.format("Battery at %s%%",battery) : "Battery empty";
     }
 
     public void drive() {
-        throw new UnsupportedOperationException("Please implement the ElonsToyCar.drive()  method");
+        battery = (battery > 0) ? battery - 1 : battery;
+    }
+
+    private int convertToMeters() {
+        return (100 - battery) * 20;
     }
 }

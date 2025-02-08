@@ -6,6 +6,10 @@ Git:
 
 Java:
 
+    - String:
+        - .format:
+            - escape for % is: %%.
+
     - boolean-Statements: 
         - AND binds stronger than OR.
 
