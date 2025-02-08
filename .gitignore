@@ -14,9 +14,11 @@
 # Exercises nicht ignorieren
 
 # BEGIN AUTO-GENERATED
+!.vscode
 !annalyns-infiltration
 !bird-watcher
 !calculator-conundrum
+!elons-toy-car
 !hello-world
 !karls-languages
 !lasagna

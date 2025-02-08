@@ -25,6 +25,7 @@ Java:
                         case "/" -> y;
                         ...
                     };
+        - all kind of Switch-versions are more or less equally performant.
 
 
 KI:
