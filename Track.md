@@ -6,6 +6,8 @@ Git:
 
 Java:
 
+    - Comparator: written like: (<Class>::compareTo). e.g.: (ProductionRemoteControlCar::compareTo).
+
     - Generics:
         - when importing a Generic interface, the Class has to be defined in <> Bracktes in the import itself. 
 
