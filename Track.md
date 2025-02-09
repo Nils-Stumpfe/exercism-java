@@ -6,6 +6,9 @@ Git:
 
 Java:
 
+    - if-Statements:
+        - can be written in a single line while not using {}.
+
     - ternary operator:
         - dont use variable--, beacause only variable (wihtout reduction) is returned.
 
