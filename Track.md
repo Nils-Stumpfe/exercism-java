@@ -6,6 +6,9 @@ Git:
 
 Java:
 
+    - Generics:
+        - when importing a Generic interface, the Class has to be defined in <> Bracktes in the import itself. 
+
     - if-Statements:
         - can be written in a single line while not using {}.
 
