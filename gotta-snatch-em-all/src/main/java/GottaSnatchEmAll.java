@@ -12,15 +12,15 @@ class GottaSnatchEmAll {
         return collection.add(card);
     }
 
+    // florian-zeidler's solution
+    // https://exercism.org/tracks/java/exercises/gotta-snatch-em-all/solutions/florian-zeidler
     static boolean canTrade(Set<String> myCollection, Set<String> theirCollection) {
-        Set<String> temp = new HashSet<>(myCollection);
-        myCollection.removeAll(theirCollection);
-        theirCollection.removeAll(temp);
-        return (myCollection.isEmpty() || theirCollection.isEmpty()) ? false : true;
+        return !myCollection.containsAll(theirCollection) && !theirCollection.containsAll(myCollection);
     }
 
     // looked at 010101-sans's solution
     // https://exercism.org/tracks/java/exercises/gotta-snatch-em-all/solutions/010101-sans
+    // could be further improved but I refuse to implement shit i cant understand. 
     static Set<String> commonCards(List<Set<String>> collections) {
         Set<String> common = new HashSet<>();
 
@@ -30,7 +30,7 @@ class GottaSnatchEmAll {
         return common;
     }
 
-
+    // could be improved but I refuse to implement shit i cant understand. 
     static Set<String> allCards(List<Set<String>> collections) {
 
         Set<String> allcard = new HashSet<>();
