@@ -31,6 +31,8 @@ Java:
         - can be iterated by an for-each loop. 
 
     - Switch-Statements:
+
+        - arrow notation has no breaks.
         - it is possible to write every possible outcome as a Value to a Variable.
             -> example:
                 int result =
