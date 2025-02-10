@@ -5,6 +5,7 @@ Coding all Exercism exercises on Java.
 
 **objective:** <br>
 I want to freshen up my Java Skills.
+
 **result:** <br>
 ...
 
