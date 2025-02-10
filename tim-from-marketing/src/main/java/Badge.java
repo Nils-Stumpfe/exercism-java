@@ -1,12 +1,9 @@
 class Badge {
+    // looked at uzilan's solution
+    // https://exercism.org/tracks/java/exercises/tim-from-marketing/solutions/uzilan
     public String print(Integer id, String name, String department) {
-        if (department == null && id == null) {
-            return String.format("%s - OWNER", name);  
-        } else if (id == null) {
-            return String.format("%s - %s", name, department.toUpperCase());  
-        } else if (department == null) {
-            return String.format("[%s] - %s - OWNER", id, name);  
-        }
-        return String.format("[%s] - %s - %s", id, name, department.toUpperCase());   
+        String dep = (department == null) ? "OWNER" : department.toUpperCase();
+        String idString = (id == null) ? "" : "[" + id + "] - ";
+        return idString + name + " - " +  dep;
     }
 }
