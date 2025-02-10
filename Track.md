@@ -6,6 +6,12 @@ Git:
 
 Java:
 
+    - Bit-Manipulation:
+        - Operators: AND & , OR |, XOR ^, NOT ~
+        - Bit-shift: 
+            - (signed shift) >> x : shift by x places (<< 2 equals multiplikation by 2)
+            - (unsigned) >>> x : shifts no mater the amplitude ( -12 >>> 2 equals 1073741821)
+
     - Comparator: written like: (<Class>::compareTo). e.g.: (ProductionRemoteControlCar::compareTo).
 
     - Generics:
