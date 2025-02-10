@@ -10,15 +10,21 @@ class CaptainsLog {
         this.random = random;
     }
 
+    // looked at florian-zeidler's solution
+    // https://exercism.org/tracks/java/exercises/captains-log/solutions/florian-zeidler
     char randomPlanetClass() {
-        return PLANET_CLASSES[random.nextInt(10)];
+        return PLANET_CLASSES[random.nextInt(PLANET_CLASSES.length)];
     }
 
+    // looked at florian-zeidler's solution
+    // https://exercism.org/tracks/java/exercises/captains-log/solutions/florian-zeidler
     String randomShipRegistryNumber() {
-        return "NCC-" + (1000 + random.nextInt(9000));
+        return "NCC-" + (random.nextInt(1000, 10000));
     }
 
+    // looked at florian-zeidler's solution
+    // https://exercism.org/tracks/java/exercises/captains-log/solutions/florian-zeidler
     double randomStardate() {
-        return 41000.0 + (1000 * random.nextDouble());
+        return random.nextDouble(41000.0, 42000.0);
     }
 }
