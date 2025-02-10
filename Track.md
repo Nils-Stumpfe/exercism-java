@@ -41,6 +41,18 @@ Java:
                         ...
                     };
         - all kind of Switch-versions are more or less equally performant.
+        - multiple cases can be written into one value
+            -> example:
+                switch (speed) {
+                case 1: case 2: case 3: case 4:
+                    return 1.0;
+                case 5: case 6: case 7: case 8:
+                    return .9;
+                case 9:
+                    return .8;
+                default:
+                    return .77;
+                }
 
 
 KI:

@@ -1,17 +1,22 @@
 public class CarsAssemble {
 
-    private static final int PRODUCTION_RATE = 221;
-    private static final int[] SUCCES_RATE= {0, 100, 100, 100, 100, 90, 90, 90, 90, 80, 77};
+    private static final int HOURLY_PRODUCTION_RATE = 221;
 
     public double productionRatePerHour(int speed) {
-        return (speed * PRODUCTION_RATE) * getSuccesRate(speed);
-    }
-
-    public double getSuccesRate(int speed) {
-        return (double) SUCCES_RATE[speed] / 100;
+        return (speed * HOURLY_PRODUCTION_RATE) * getSuccessRate(speed);
     }
 
     public int workingItemsPerMinute(int speed) {
-        return (int) (productionRatePerHour(speed) / 60);
+        return (int) productionRatePerHour(speed) / 60;
+    }
+
+    // looked at rabestro's solution
+    // https://exercism.org/tracks/java/exercises/cars-assemble/solutions/rabestro
+    private double getSuccessRate(int speed) {
+        return (speed < 5) ? 1.0 
+            : (speed < 9) ? 0.9
+            : (speed == 9) ? 0.8 
+            : 0.77;
+
     }
 }
