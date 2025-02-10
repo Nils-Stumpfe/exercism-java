@@ -6,6 +6,9 @@ Git:
 
 Java:
 
+    - Datatypes:
+        - primitive Datatypes start with an lowercase character and can't be null.
+
     - Bit-Manipulation:
         - Operators: AND & , OR |, XOR ^, NOT ~
         - Bit-shift: 
