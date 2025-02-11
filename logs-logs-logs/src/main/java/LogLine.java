@@ -1,13 +1,19 @@
 public class LogLine {
 
+    private String line;
+
     public LogLine(String logLine) {
+        line = logLine;
     }
 
     public LogLevel getLogLevel() {
-        throw new UnsupportedOperationException("Please implement the getLogLevel() method");
+        return LogLevel.getLogLevel(line.substring(1,4));
     }
 
     public String getOutputForShortLog() {
-        throw new UnsupportedOperationException("Please implement the getOutputForShortLog() method");
+         int encodig = this.getLogLevel().getEncodedLevel();
+         String message = line.substring(7);
+         return String.format("%s:%s", encodig, message);
+        
     }
 }
