@@ -1,11 +1,16 @@
 public class GameMaster {
 
     public String describe (Character character) {
-        return String.format("You're a level %s %s with %s hit points.", character.getLevel(), character.getCharacterClass(), character.getHitPoints());
+        return String.format("You're a level %s %s with %s hit points.", 
+                            character.getLevel(), 
+                            character.getCharacterClass(), 
+                            character.getHitPoints());
     }
 
     public String describe (Destination destination) {
-        return String.format("You've arrived at %s, which has %s inhabitants.",destination.getName(), destination.getInhabitants());
+        return String.format("You've arrived at %s, which has %s inhabitants.",
+                            destination.getName(), 
+                            destination.getInhabitants());
     }
 
     public String describe (TravelMethod travelMethod) {
@@ -15,8 +20,10 @@ public class GameMaster {
         };
     }
 
+    // looked at kimggor's solution for simplicity
+    // https://exercism.org/tracks/java/exercises/wizards-and-warriors-2/solutions/kimggor
     public String describe (Character character, Destination destination, TravelMethod travelMethod) {
-        return this.describe(character) + " " +  this.describe(travelMethod) + " " + this.describe(destination);
+        return String.join(" ",  this.describe(character), this.describe(travelMethod), this.describe(destination));
     }
 
     public String describe (Character character, Destination destination) {
