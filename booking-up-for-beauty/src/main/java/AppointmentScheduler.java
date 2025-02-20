@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 class AppointmentScheduler {
 
@@ -19,11 +20,8 @@ class AppointmentScheduler {
 
     // Formatter benutzen.
     public String getDescription(LocalDateTime appointmentDate) {
-        return String.format("You have an appointment on %s, %s %s, %s, at %s:00 %s.", 
-                                                                appointmentDate.getDayOfWeek(),
-                                                                appointmentDate.getMonth(),
-                                                                appointmentDate.getDayOfMonth(),
-                                                                appointmentDate.getYear(),
+        return String.format("You have an appointment on %s, at %s.", 
+                                                                DateTimeFormatter.ofPattern("EEEE, MMMM dd, Y").format(datetime),
                                                                 (appointmentDate.getHour() > 12) ? appointmentDate.getHour()-12 : appointmentDate.getHour(),
                                                                 (appointmentDate.getHour() > 12) ? "PM" : "AM");
     }
@@ -34,5 +32,8 @@ class AppointmentScheduler {
 
     public static void main(String[] args) {
         LocalDateTime datetime = LocalDateTime.of(2007, 12, 3, 22, 15, 30);
+
+        System.out.println(DateTimeFormatter.ofPattern("EEEE, MMMM dd, Y").format(datetime));
+
     }
 }
